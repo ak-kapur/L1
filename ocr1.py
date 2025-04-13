@@ -22,18 +22,18 @@ import webbrowser
 st.sidebar.title("Navigation")
 
 # Button to open app6(Judge).py
-if st.sidebar.button("See the Suggested Decision"):
-    os.system("streamlit run app6(Judge).py")  # Runs the Judge app
+# if st.sidebar.button("See the Suggested Decision"):
+#     os.system("streamlit run app6(Judge).py")  # Runs the Judge app
 
-# # Button to open index.html
-# index_path = r"C:\Users\aryam\Desktop\Minor Project\templates\index.html"  # Get absolute path
-# if st.sidebar.button("Dashboard"):
-#     webbrowser.open(f"file://{index_path}")  # Open the HTML file in a new tab
-if st.sidebar.button("AI RESEARCH ENGINE"):
-    os.system("streamlit run app7(Judge).py")
+# # # Button to open index.html
+# # index_path = r"C:\Users\aryam\Desktop\Minor Project\templates\index.html"  # Get absolute path
+# # if st.sidebar.button("Dashboard"):
+# #     webbrowser.open(f"file://{index_path}")  # Open the HTML file in a new tab
+# if st.sidebar.button("AI RESEARCH ENGINE"):
+#     os.system("streamlit run app7(Judge).py")
 
-if st.sidebar.button("Chatbot"):
-    os.system("streamlit run chatbot.py")
+# if st.sidebar.button("Chatbot"):
+#     os.system("streamlit run chatbot.py")
 # Function to convert image to text using OCR
 def convert_image_to_text(image_path, min_confidence=0.6):
     # Read the image
