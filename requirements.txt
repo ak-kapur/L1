@@ -12,6 +12,7 @@ faiss-cpu
 mysql-connector-python
 pytesseract
 fpdf
-opencv-python
+opencv-python-headless
+
 pandas
 datetime
