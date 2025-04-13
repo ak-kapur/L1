@@ -15,4 +15,3 @@ fpdf
 opencv-python
 pandas
 datetime
-subprocess
