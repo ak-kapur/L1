@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+import subprocess
 
 st.title("LegalEase Login")
 
@@ -9,12 +9,11 @@ col1, col2 = st.columns(2)
 
 with col1:
     if st.button('Login as Judge'):
-        os.system('streamlit run "app7(Final).py"')
+        subprocess.Popen(['streamlit', 'run', 'app7(Final).py'])
 
 with col2:
     if st.button('Login as Lawyer'):
-        os.system('streamlit run trial.py')
-
+        subprocess.Popen(['streamlit', 'run', 'trial.py'])
 
 
 # import streamlit as st
