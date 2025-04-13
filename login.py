@@ -8,7 +8,7 @@ st.write("Select your role to proceed:")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("Login ass Judge"):
+    if st.button("Login as Judge"):
         os.system("streamlit run app7(Final).py")
 
 with col2:
