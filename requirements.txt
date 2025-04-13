@@ -1,0 +1,17 @@
+streamlit
+PyPDF2
+beautifulsoup4
+requests
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-core>=0.1.30,<0.2
+langchain-google-genai>=0.0.9,<0.1
+google-generativeai>=0.4.1,<0.5
+pydantic>=2.6,<3
+faiss-cpu
+mysql-connector-python
+pytesseract
+fpdf
+opencv-python
+pandas
+datetime
