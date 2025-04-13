@@ -9,11 +9,22 @@ col1, col2 = st.columns(2)
 
 with col1:
     if st.button('Login as Judge'):
-        subprocess.Popen(['streamlit', 'run', 'app7(Final).py'])
+        process = subprocess.Popen(['streamlit', 'run', 'app7(Final).py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        stdout, stderr = process.communicate()  # Capture output and errors
+        st.write("Judge login output:")
+        st.write(stdout.decode())
+        st.write("Judge login error (if any):")
+        st.write(stderr.decode())
 
 with col2:
     if st.button('Login as Lawyer'):
-        subprocess.Popen(['streamlit', 'run', 'trial.py'])
+        process = subprocess.Popen(['streamlit', 'run', 'trial.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        stdout, stderr = process.communicate()  # Capture output and errors
+        st.write("Lawyer login output:")
+        st.write(stdout.decode())
+        st.write("Lawyer login error (if any):")
+        st.write(stderr.decode())
+
 
 
 # import streamlit as st
