@@ -38,16 +38,16 @@ def get_suggested_decision(case_details):
     return decision.content
 st.sidebar.title("Navigation")
 
-if "page" not in st.session_state:
-    st.session_state.page = "app6"
-
-st.sidebar.title("Navigation")
-if st.sidebar.button("Judge"):
-    st.session_state.page = "app6"
+# Button to open app6(Judge).py
 if st.sidebar.button("Chatbot"):
-    st.session_state.page = "chatbot"
+    os.system("streamlit run chatbot.py")  # Runs the Judge app
+
+# # Button to open index.html
+# index_path = r"C:\Users\aryam\Desktop\Minor Project\templates\index.html"  # Get absolute path
+# if st.sidebar.button("Dashboard"):
+#     webbrowser.open(f"file://{index_path}")  # Open the HTML file in a new tab
 if st.sidebar.button("Scan Documents"):
-    st.session_state.page = "ocr1"
+    os.system("streamlit run ocr1.py")
 # Streamlit App
 def main():
     st.title("Suggested Decision ")
