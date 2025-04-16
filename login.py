@@ -11,17 +11,17 @@ if "page" not in st.session_state:
 
 if role == "Judge":
     st.session_state.page = "app7(Final)"
-    st.experimental_set_query_params(page="app7(Final)")
+    st.query_params.update({"page": "app7(Final)"})
 elif role == "Lawyer":
     st.session_state.page = "trial"
-    st.experimental_set_query_params(page="trial")
+    st.query_params.update({"page": "trial"})
 
 # Handle page redirection
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
 if "page" in query_params:
-    if query_params["page"][0] == "app7(Final)":
+    if query_params["page"] == "app7(Final)":
         st.write("Redirecting to Judge page...")
         # Include the content of app7(Final).py here
-    elif query_params["page"][0] == "trial":
+    elif query_params["page"] == "trial":
         st.write("Redirecting to Lawyer page...")
         # Include the content of trial.py here
