@@ -7,6 +7,6 @@ st.write("Select your role to proceed:")
 role = st.selectbox("Choose Role", ["Select", "Judge", "Lawyer"])
 
 if role == "Judge":
-    st.switch_page("app7(Final).py")
+    st.switch_page("pages/app7(Final).py")
 elif role == "Lawyer":
-    st.switch_page("trial.py")
+    st.switch_page("pages/trial.py")
