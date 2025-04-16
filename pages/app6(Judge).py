@@ -72,9 +72,9 @@ if st.session_state.page == "app6(Judge)":
     main()
 
 elif st.session_state.page == "chatbot":
-    import chatbot
+    import pages.chatbot as chatbot
     chatbot.main()
 
 elif st.session_state.page == "ocr1":
-    import ocr1
+    import pages.ocr1 as ocr1
     ocr1.main()
